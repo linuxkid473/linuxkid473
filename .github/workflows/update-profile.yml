@@ -1,0 +1,51 @@
+name: Update profile activity
+
+on:
+  schedule:
+    # Every 6 hours. GitHub may delay scheduled runs slightly at busy times.
+    - cron: "0 */6 * * *"
+  workflow_dispatch: {}
+  push:
+    branches: [main]
+    paths:
+      - "scripts/generate-activity.js"
+      - ".github/workflows/update-profile.yml"
+
+permissions:
+  contents: write
+
+concurrency:
+  group: update-profile
+  cancel-in-progress: true
+
+jobs:
+  regenerate:
+    runs-on: ubuntu-latest
+    env:
+      OWNER: linuxkid473
+      REPO: PureUNIX
+    steps:
+      - name: Checkout profile repo
+        uses: actions/checkout@v4
+
+      - name: Set up Node
+        uses: actions/setup-node@v4
+        with:
+          node-version: "20"
+
+      - name: Generate activity.svg
+        env:
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+        run: node scripts/generate-activity.js
+
+      - name: Commit if changed
+        run: |
+          if git diff --quiet -- assets/activity.svg; then
+            echo "No change in assets/activity.svg — skipping commit."
+            exit 0
+          fi
+          git config user.name "github-actions[bot]"
+          git config user.email "github-actions[bot]@users.noreply.github.com"
+          git add assets/activity.svg
+          git commit -m "chore: sync activity panel"
+          git push

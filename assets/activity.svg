@@ -1,0 +1,27 @@
+<svg width="100%" viewBox="0 0 1000 110" xmlns="http://www.w3.org/2000/svg" role="img" aria-labelledby="actTitle actDesc">
+  <title id="actTitle">PureUNIX latest activity</title>
+  <desc id="actDesc">Most recently touched subsystem: bus/usb/xhci. Commit a1c9e42: xhci: negotiate control transfer sizing. 2026-07-11.</desc>
+  <defs>
+    <linearGradient id="abg" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0%" stop-color="#0b0e12"/>
+      <stop offset="100%" stop-color="#090b0e"/>
+    </linearGradient>
+    <linearGradient id="aedge" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0%" stop-color="#2a323a"/>
+      <stop offset="100%" stop-color="#171c21"/>
+    </linearGradient>
+  </defs>
+  <rect x="1" y="1" width="998" height="108" rx="10" fill="url(#abg)" stroke="url(#aedge)" stroke-width="1.5"/>
+  <g font-family="ui-monospace, SFMono-Regular, Menlo, Consolas, 'Liberation Mono', monospace">
+    <text x="32" y="38" font-size="12" letter-spacing="1.5" fill="#5b6a72">/dev/log/pureunix.activity</text>
+    <line x1="32" y1="50" x2="968" y2="50" stroke="#1c232b" stroke-width="1"/>
+    <text x="32" y="80" font-size="14.5">
+      <tspan fill="#4b5b63">[ sync ]</tspan>
+      <tspan fill="#c9d3d6" dx="10">last touched:</tspan>
+      <tspan fill="#7fb3ac" dx="6">bus/usb/xhci</tspan>
+      <tspan fill="#3f4a52" dx="14">commit</tspan>
+      <tspan fill="#8fa3ad" dx="6">a1c9e42</tspan>
+      <tspan fill="#3f4a52" dx="14">2026-07-11</tspan>
+    </text>
+  </g>
+</svg>

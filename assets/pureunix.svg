@@ -1,0 +1,77 @@
+<svg width="100%" viewBox="0 0 1000 340" xmlns="http://www.w3.org/2000/svg" role="img" aria-labelledby="sysTitle sysDesc">
+  <title id="sysTitle">PureUNIX subsystem status</title>
+  <desc id="sysDesc">
+    Kernel subsystem status table for PureUNIX. Online: kernel core, virtual
+    filesystem, process management, fork exec wait, signal delivery, pipes
+    and redirection, BusyBox userland, USB core. In progress: xHCI control
+    transfers.
+  </desc>
+
+  <defs>
+    <linearGradient id="pbg" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0%" stop-color="#0b0e12"/>
+      <stop offset="100%" stop-color="#090b0e"/>
+    </linearGradient>
+    <linearGradient id="pedge" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0%" stop-color="#2a323a"/>
+      <stop offset="100%" stop-color="#171c21"/>
+    </linearGradient>
+  </defs>
+
+  <rect x="1" y="1" width="998" height="338" rx="10" fill="url(#pbg)" stroke="url(#pedge)" stroke-width="1.5"/>
+
+  <g font-family="ui-monospace, SFMono-Regular, Menlo, Consolas, 'Liberation Mono', monospace">
+    <text x="32" y="42" font-size="13" letter-spacing="1.5" fill="#5b6a72">/proc/pureunix/subsystems</text>
+    <line x1="32" y1="56" x2="968" y2="56" stroke="#1c232b" stroke-width="1"/>
+
+    <!-- header -->
+    <text x="32" y="80" font-size="12" fill="#3f4a52" letter-spacing="1">SUBSYSTEM</text>
+    <text x="620" y="80" font-size="12" fill="#3f4a52" letter-spacing="1">STATE</text>
+    <text x="740" y="80" font-size="12" fill="#3f4a52" letter-spacing="1">NOTE</text>
+
+    <!-- rows -->
+    <!-- row template: name, state (online/active), note -->
+    <g font-size="14.5">
+      <g>
+        <text x="32" y="112" fill="#c9d3d6">kernel/core</text>
+        <text x="620" y="112" fill="#7fd1ae">online</text>
+        <text x="740" y="112" fill="#5b6a72">protected mode, mm</text>
+      </g>
+      <g>
+        <text x="32" y="140" fill="#c9d3d6">fs/vfs</text>
+        <text x="620" y="140" fill="#7fd1ae">online</text>
+        <text x="740" y="140" fill="#5b6a72">root mounted</text>
+      </g>
+      <g>
+        <text x="32" y="168" fill="#c9d3d6">kernel/proc</text>
+        <text x="620" y="168" fill="#7fd1ae">online</text>
+        <text x="740" y="168" fill="#5b6a72">fork, exec, wait</text>
+      </g>
+      <g>
+        <text x="32" y="196" fill="#c9d3d6">kernel/signal</text>
+        <text x="620" y="196" fill="#7fd1ae">online</text>
+        <text x="740" y="196" fill="#5b6a72">delivery, kill</text>
+      </g>
+      <g>
+        <text x="32" y="224" fill="#c9d3d6">shell/pipe</text>
+        <text x="620" y="224" fill="#7fd1ae">online</text>
+        <text x="740" y="224" fill="#5b6a72">pipes, dup2, redirection</text>
+      </g>
+      <g>
+        <text x="32" y="252" fill="#c9d3d6">userland/busybox</text>
+        <text x="620" y="252" fill="#7fd1ae">online</text>
+        <text x="740" y="252" fill="#5b6a72">core utilities</text>
+      </g>
+      <g>
+        <text x="32" y="280" fill="#c9d3d6">bus/usb</text>
+        <text x="620" y="280" fill="#7fd1ae">online</text>
+        <text x="740" y="280" fill="#5b6a72">stack initialized</text>
+      </g>
+      <g>
+        <text x="32" y="308" fill="#c9d3d6">bus/usb/xhci</text>
+        <text x="620" y="308" fill="#e0b975">active</text>
+        <text x="740" y="308" fill="#5b6a72">control transfers in progress</text>
+      </g>
+    </g>
+  </g>
+</svg>

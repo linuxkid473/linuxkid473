@@ -1,0 +1,13 @@
+{
+  "name": "pureunix-profile",
+  "version": "1.0.0",
+  "private": true,
+  "type": "module",
+  "description": "Generators behind the linuxkid473 GitHub profile — renders assets/activity.svg from live PureUNIX repository data.",
+  "engines": {
+    "node": ">=18"
+  },
+  "scripts": {
+    "generate:activity": "node scripts/generate-activity.js"
+  }
+}
