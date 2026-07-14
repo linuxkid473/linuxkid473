@@ -1,6 +1,6 @@
 <svg width="100%" viewBox="0 0 1000 110" xmlns="http://www.w3.org/2000/svg" role="img" aria-labelledby="actTitle actDesc">
   <title id="actTitle">PureUNIX latest activity</title>
-  <desc id="actDesc">Most recently touched subsystem: bus/usb/xhci. Commit a1c9e42: xhci: negotiate control transfer sizing. 2026-07-11.</desc>
+  <desc id="actDesc">Most recently touched subsystem: root. Commit b4b712e: Port nnn file manager to PureUnix. 2026-07-14.</desc>
   <defs>
     <linearGradient id="abg" x1="0" y1="0" x2="0" y2="1">
       <stop offset="0%" stop-color="#0b0e12"/>
@@ -18,10 +18,10 @@
     <text x="32" y="80" font-size="14.5">
       <tspan fill="#4b5b63">[ sync ]</tspan>
       <tspan fill="#c9d3d6" dx="10">last touched:</tspan>
-      <tspan fill="#7fb3ac" dx="6">bus/usb/xhci</tspan>
+      <tspan fill="#7fb3ac" dx="6">root</tspan>
       <tspan fill="#3f4a52" dx="14">commit</tspan>
-      <tspan fill="#8fa3ad" dx="6">a1c9e42</tspan>
-      <tspan fill="#3f4a52" dx="14">2026-07-11</tspan>
+      <tspan fill="#8fa3ad" dx="6">b4b712e</tspan>
+      <tspan fill="#3f4a52" dx="14">2026-07-14</tspan>
     </text>
   </g>
 </svg>
