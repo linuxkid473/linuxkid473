@@ -1,6 +1,6 @@
 <svg width="100%" viewBox="0 0 1000 110" xmlns="http://www.w3.org/2000/svg" role="img" aria-labelledby="actTitle actDesc">
   <title id="actTitle">PureUNIX latest activity</title>
-  <desc id="actDesc">Most recently touched subsystem: root. Commit d435512: Update README.md. 2026-07-23.</desc>
+  <desc id="actDesc">Most recently touched subsystem: root. Commit dda5fd8: Update image in README.md. 2026-07-23.</desc>
   <defs>
     <linearGradient id="abg" x1="0" y1="0" x2="0" y2="1">
       <stop offset="0%" stop-color="#0b0e12"/>
@@ -20,7 +20,7 @@
       <tspan fill="#c9d3d6" dx="10">last touched:</tspan>
       <tspan fill="#7fb3ac" dx="6">root</tspan>
       <tspan fill="#3f4a52" dx="14">commit</tspan>
-      <tspan fill="#8fa3ad" dx="6">d435512</tspan>
+      <tspan fill="#8fa3ad" dx="6">dda5fd8</tspan>
       <tspan fill="#3f4a52" dx="14">2026-07-23</tspan>
     </text>
   </g>
