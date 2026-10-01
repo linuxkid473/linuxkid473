@@ -51,27 +51,17 @@ i'm vihaan — 14, systems programmer. i write the parts of computing most peopl
 <img src="assets/activity.svg" width="100%" alt="Latest activity panel — the repo and subsystem touched by the most recent push, synced automatically" />
 
 </div>
-
-<br />
-
 <div align="center">
 
 ```text
 ╔═[ 0x03 ]════════════════════════ reach ════════════════════════╗
 ```
 
-<div align="center">
+<img src="assets/badges.svg" width="100%" alt="Neon pill strip: PureUNIX, AsterOS, maclator, ppcosxkvm, SiMPLE-OS, no frameworks" />
 
 <br />
 
 [`github/linuxkid473`](https://github.com/linuxkid473) &nbsp;·&nbsp; [`pureunix`](https://github.com/linuxkid473/PureUNIX) &nbsp;·&nbsp; [`asteros`](https://github.com/linuxkid473/AsterOS) &nbsp;·&nbsp; [`maclator`](https://github.com/linuxkid473/maclator) &nbsp;·&nbsp; [`ppcosxkvm`](https://github.com/linuxkid473/ppcosxkvm)
-
-<br /><br />
-
-<a href="https://github.com/linuxkid473"><img src="https://img.shields.io/badge/github-linuxkid473-05070a?style=for-the-badge&amp;logo=github&amp;logoColor=39ff14&amp;labelColor=05070a" alt="GitHub profile: linuxkid473" /></a>
-<img src="https://img.shields.io/github/followers/linuxkid473?style=for-the-badge&amp;label=followers&amp;color=19f7ff&amp;labelColor=05070a&amp;logo=github&amp;logoColor=19f7ff" alt="GitHub followers" />
-<img src="https://img.shields.io/github/stars/linuxkid473/PureUNIX?style=for-the-badge&amp;label=pureunix%20stars&amp;color=ff2bd6&amp;labelColor=05070a" alt="PureUNIX stars" />
-<img src="https://img.shields.io/github/last-commit/linuxkid473/PureUNIX?style=for-the-badge&amp;label=last%20commit&amp;color=39ff14&amp;labelColor=05070a" alt="Last commit to PureUNIX" />
 
 <br /><br />
 

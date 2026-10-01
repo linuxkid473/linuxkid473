@@ -303,8 +303,51 @@ def stack():
 '''
 
 
+
+# -------------------------------------------------------------- badges -------
+def badges():
+    p = "b"
+    W, H = 1000, 76
+    items = [
+        ("PUREUNIX", GRN),
+        ("ASTEROS", CYN),
+        ("MACLATOR", AMB),
+        ("PPCOSXKVM", MAG),
+        ("SiMPLE-OS", CYN),
+        ("NO FRAMEWORKS", GRN),
+    ]
+    size, pad, gap, ls = 13, 20, 16, 1.8
+    widths = [w(label, size) + ls * len(label) + pad * 2 for label, _ in items]
+    total = sum(widths) + gap * (len(items) - 1)
+    x = (W - total) / 2
+    out = []
+    for i, ((label, color), width) in enumerate(zip(items, widths)):
+        begin = 0.15 + i * 0.12
+        cy = H / 2
+        out.append(f'''    <g opacity="1">
+      <rect x="{x:.1f}" y="{cy-15:.1f}" width="{width:.1f}" height="30" rx="15" fill="#070c11" stroke="{color}" stroke-opacity="0.55" stroke-width="1.2"/>
+      <circle cx="{x+pad-4:.1f}" cy="{cy:.1f}" r="2.6" fill="{color}">
+        <animate attributeName="opacity" values="1;0.25;1" dur="2.4s" begin="{begin:.2f}s" repeatCount="indefinite"/>
+      </circle>
+      <text x="{x+width/2+6:.1f}" y="{cy+4.5:.1f}" font-family="{MONO}" font-size="{size}" letter-spacing="{ls}" fill="{color}" text-anchor="middle" filter="url(#{p}soft)">{label}</text>
+      <animate attributeName="opacity" from="0" to="1" begin="{begin:.2f}s" dur="0.3s" fill="freeze"/>
+    </g>''')
+        x += width + gap
+    body = "\n".join(out)
+    return f'''<svg width="100%" viewBox="0 0 {W} {H}" xmlns="http://www.w3.org/2000/svg" role="img" aria-labelledby="bdgTitle bdgDesc">
+  <title id="bdgTitle">Shipped projects</title>
+  <desc id="bdgDesc">Neon pill strip: PureUNIX, AsterOS, maclator, ppcosxkvm, SiMPLE-OS and no frameworks.</desc>
+{defs_common(p)}
+  <clipPath id="{p}clip"><rect x="1" y="1" width="{W-2}" height="{H-2}" rx="12"/></clipPath>
+{shell_open(p, W, H, "")}
+{body}
+{shell_close(p, W, H)}
+</svg>
+'''
+
+
 os.makedirs(OUT, exist_ok=True)
-for name, fn in (("hero.svg", hero), ("console.svg", console), ("stack.svg", stack)):
+for name, fn in (("hero.svg", hero), ("console.svg", console), ("stack.svg", stack), ("badges.svg", badges)):
     path = os.path.join(OUT, name)
     with open(path, "w") as fh:
         fh.write(fn())

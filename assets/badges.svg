@@ -1,0 +1,104 @@
+<svg width="100%" viewBox="0 0 1000 76" xmlns="http://www.w3.org/2000/svg" role="img" aria-labelledby="bdgTitle bdgDesc">
+  <title id="bdgTitle">Shipped projects</title>
+  <desc id="bdgDesc">Neon pill strip: PureUNIX, AsterOS, maclator, ppcosxkvm, SiMPLE-OS and no frameworks.</desc>
+  <defs>
+    <linearGradient id="bbg" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0%" stop-color="#04070b"/>
+      <stop offset="100%" stop-color="#080d13"/>
+    </linearGradient>
+    <linearGradient id="bedge" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0%" stop-color="#1d3a40"/>
+      <stop offset="100%" stop-color="#0d1a1f"/>
+    </linearGradient>
+    <linearGradient id="bneon" x1="0" y1="0" x2="1" y2="0">
+      <stop offset="0%" stop-color="#39ff14"/>
+      <stop offset="45%" stop-color="#19f7ff"/>
+      <stop offset="100%" stop-color="#ff2bd6"/>
+    </linearGradient>
+    <linearGradient id="bsweep" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0%" stop-color="#19f7ff" stop-opacity="0"/>
+      <stop offset="50%" stop-color="#19f7ff" stop-opacity="0.55"/>
+      <stop offset="100%" stop-color="#19f7ff" stop-opacity="0"/>
+    </linearGradient>
+    <filter id="bglow" x="-25%" y="-25%" width="150%" height="150%">
+      <feGaussianBlur stdDeviation="4" result="b"/>
+      <feMerge>
+        <feMergeNode in="b"/>
+        <feMergeNode in="b"/>
+        <feMergeNode in="SourceGraphic"/>
+      </feMerge>
+    </filter>
+    <filter id="bsoft" x="-20%" y="-20%" width="140%" height="140%">
+      <feGaussianBlur stdDeviation="1.4" result="b"/>
+      <feMerge>
+        <feMergeNode in="b"/>
+        <feMergeNode in="SourceGraphic"/>
+      </feMerge>
+    </filter>
+    <pattern id="bgrid" width="40" height="40" patternUnits="userSpaceOnUse">
+      <path d="M40 0 H0 V40" fill="none" stroke="#19f7ff" stroke-opacity="0.05" stroke-width="1"/>
+    </pattern>
+    <pattern id="bscan" width="4" height="4" patternUnits="userSpaceOnUse">
+      <rect width="4" height="1" fill="#ffffff" opacity="0.022"/>
+    </pattern>
+  </defs>
+  <clipPath id="bclip"><rect x="1" y="1" width="998" height="74" rx="12"/></clipPath>
+  <g clip-path="url(#bclip)">
+    <rect x="1" y="1" width="998" height="74" rx="12" fill="url(#bbg)"/>
+    <rect x="1" y="1" width="998" height="74" rx="12" fill="url(#bgrid)"/>
+    <rect x="1" y="1" width="998" height="74" rx="12" fill="url(#bscan)"/>
+
+    <g opacity="1">
+      <rect x="80.8" y="23.0" width="116.8" height="30" rx="15" fill="#070c11" stroke="#39ff14" stroke-opacity="0.55" stroke-width="1.2"/>
+      <circle cx="96.8" cy="38.0" r="2.6" fill="#39ff14">
+        <animate attributeName="opacity" values="1;0.25;1" dur="2.4s" begin="0.15s" repeatCount="indefinite"/>
+      </circle>
+      <text x="145.2" y="42.5" font-family="ui-monospace, SFMono-Regular, Menlo, Consolas, 'Liberation Mono', monospace" font-size="13" letter-spacing="1.8" fill="#39ff14" text-anchor="middle" filter="url(#bsoft)">PUREUNIX</text>
+      <animate attributeName="opacity" from="0" to="1" begin="0.15s" dur="0.3s" fill="freeze"/>
+    </g>
+    <g opacity="1">
+      <rect x="213.6" y="23.0" width="107.2" height="30" rx="15" fill="#070c11" stroke="#19f7ff" stroke-opacity="0.55" stroke-width="1.2"/>
+      <circle cx="229.6" cy="38.0" r="2.6" fill="#19f7ff">
+        <animate attributeName="opacity" values="1;0.25;1" dur="2.4s" begin="0.27s" repeatCount="indefinite"/>
+      </circle>
+      <text x="273.2" y="42.5" font-family="ui-monospace, SFMono-Regular, Menlo, Consolas, 'Liberation Mono', monospace" font-size="13" letter-spacing="1.8" fill="#19f7ff" text-anchor="middle" filter="url(#bsoft)">ASTEROS</text>
+      <animate attributeName="opacity" from="0" to="1" begin="0.27s" dur="0.3s" fill="freeze"/>
+    </g>
+    <g opacity="1">
+      <rect x="336.8" y="23.0" width="116.8" height="30" rx="15" fill="#070c11" stroke="#ffb000" stroke-opacity="0.55" stroke-width="1.2"/>
+      <circle cx="352.8" cy="38.0" r="2.6" fill="#ffb000">
+        <animate attributeName="opacity" values="1;0.25;1" dur="2.4s" begin="0.39s" repeatCount="indefinite"/>
+      </circle>
+      <text x="401.2" y="42.5" font-family="ui-monospace, SFMono-Regular, Menlo, Consolas, 'Liberation Mono', monospace" font-size="13" letter-spacing="1.8" fill="#ffb000" text-anchor="middle" filter="url(#bsoft)">MACLATOR</text>
+      <animate attributeName="opacity" from="0" to="1" begin="0.39s" dur="0.3s" fill="freeze"/>
+    </g>
+    <g opacity="1">
+      <rect x="469.6" y="23.0" width="126.4" height="30" rx="15" fill="#070c11" stroke="#ff2bd6" stroke-opacity="0.55" stroke-width="1.2"/>
+      <circle cx="485.6" cy="38.0" r="2.6" fill="#ff2bd6">
+        <animate attributeName="opacity" values="1;0.25;1" dur="2.4s" begin="0.51s" repeatCount="indefinite"/>
+      </circle>
+      <text x="538.8" y="42.5" font-family="ui-monospace, SFMono-Regular, Menlo, Consolas, 'Liberation Mono', monospace" font-size="13" letter-spacing="1.8" fill="#ff2bd6" text-anchor="middle" filter="url(#bsoft)">PPCOSXKVM</text>
+      <animate attributeName="opacity" from="0" to="1" begin="0.51s" dur="0.3s" fill="freeze"/>
+    </g>
+    <g opacity="1">
+      <rect x="612.0" y="23.0" width="126.4" height="30" rx="15" fill="#070c11" stroke="#19f7ff" stroke-opacity="0.55" stroke-width="1.2"/>
+      <circle cx="628.0" cy="38.0" r="2.6" fill="#19f7ff">
+        <animate attributeName="opacity" values="1;0.25;1" dur="2.4s" begin="0.63s" repeatCount="indefinite"/>
+      </circle>
+      <text x="681.2" y="42.5" font-family="ui-monospace, SFMono-Regular, Menlo, Consolas, 'Liberation Mono', monospace" font-size="13" letter-spacing="1.8" fill="#19f7ff" text-anchor="middle" filter="url(#bsoft)">SiMPLE-OS</text>
+      <animate attributeName="opacity" from="0" to="1" begin="0.63s" dur="0.3s" fill="freeze"/>
+    </g>
+    <g opacity="1">
+      <rect x="754.4" y="23.0" width="164.8" height="30" rx="15" fill="#070c11" stroke="#39ff14" stroke-opacity="0.55" stroke-width="1.2"/>
+      <circle cx="770.4" cy="38.0" r="2.6" fill="#39ff14">
+        <animate attributeName="opacity" values="1;0.25;1" dur="2.4s" begin="0.75s" repeatCount="indefinite"/>
+      </circle>
+      <text x="842.8" y="42.5" font-family="ui-monospace, SFMono-Regular, Menlo, Consolas, 'Liberation Mono', monospace" font-size="13" letter-spacing="1.8" fill="#39ff14" text-anchor="middle" filter="url(#bsoft)">NO FRAMEWORKS</text>
+      <animate attributeName="opacity" from="0" to="1" begin="0.75s" dur="0.3s" fill="freeze"/>
+    </g>
+    <rect x="1" y="1" width="998" height="74" rx="12" fill="url(#bsweep)" opacity="0.09">
+      <animate attributeName="y" values="-76;76" dur="9s" repeatCount="indefinite"/>
+    </rect>
+    <rect x="1" y="1" width="998" height="74" rx="12" fill="none" stroke="url(#bedge)" stroke-width="1.5"/>
+  </g>
+</svg>
