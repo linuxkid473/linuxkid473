@@ -1,27 +1,46 @@
-<svg width="100%" viewBox="0 0 1000 110" xmlns="http://www.w3.org/2000/svg" role="img" aria-labelledby="actTitle actDesc">
-  <title id="actTitle">PureUNIX latest activity</title>
-  <desc id="actDesc">Most recently touched subsystem: root. Commit 6bebbfd: Fix toolchain compatibility regressions. 2026-07-25.</desc>
+<svg width="100%" viewBox="0 0 1000 132" xmlns="http://www.w3.org/2000/svg" role="img" aria-labelledby="actTitle actDesc">
+  <title id="actTitle">Latest GitHub activity</title>
+  <desc id="actDesc">Most recently pushed public repository: ppcosxkvm. Latest commit 6225203 on 2026-09-30 touching root: qemu: scanout that keeps up with the guest.</desc>
   <defs>
     <linearGradient id="abg" x1="0" y1="0" x2="0" y2="1">
-      <stop offset="0%" stop-color="#0b0e12"/>
-      <stop offset="100%" stop-color="#090b0e"/>
+      <stop offset="0%" stop-color="#04070b"/>
+      <stop offset="100%" stop-color="#080d13"/>
     </linearGradient>
     <linearGradient id="aedge" x1="0" y1="0" x2="0" y2="1">
-      <stop offset="0%" stop-color="#2a323a"/>
-      <stop offset="100%" stop-color="#171c21"/>
+      <stop offset="0%" stop-color="#1d3a40"/>
+      <stop offset="100%" stop-color="#0d1a1f"/>
     </linearGradient>
+    <filter id="asoft" x="-20%" y="-20%" width="140%" height="140%">
+      <feGaussianBlur stdDeviation="1.4" result="b"/>
+      <feMerge>
+        <feMergeNode in="b"/>
+        <feMergeNode in="SourceGraphic"/>
+      </feMerge>
+    </filter>
+    <pattern id="agrid" width="40" height="40" patternUnits="userSpaceOnUse">
+      <path d="M40 0 H0 V40" fill="none" stroke="#19f7ff" stroke-opacity="0.05" stroke-width="1"/>
+    </pattern>
   </defs>
-  <rect x="1" y="1" width="998" height="108" rx="10" fill="url(#abg)" stroke="url(#aedge)" stroke-width="1.5"/>
+  <rect x="1" y="1" width="998" height="130" rx="12" fill="url(#abg)"/>
+  <rect x="1" y="1" width="998" height="130" rx="12" fill="url(#agrid)"/>
   <g font-family="ui-monospace, SFMono-Regular, Menlo, Consolas, 'Liberation Mono', monospace">
-    <text x="32" y="38" font-size="12" letter-spacing="1.5" fill="#5b6a72">/dev/log/pureunix.activity</text>
-    <line x1="32" y1="50" x2="968" y2="50" stroke="#1c232b" stroke-width="1"/>
+    <text x="32" y="36" font-size="12.5" letter-spacing="1.5" fill="#5d7f8b">/dev/log/github.activity</text>
+    <text x="968" y="36" font-size="12" letter-spacing="1.5" fill="#31505b" text-anchor="end">tail -n 1</text>
+    <line x1="32" y1="48" x2="968" y2="48" stroke="#0d1a1f" stroke-width="1"/>
     <text x="32" y="80" font-size="14.5">
-      <tspan fill="#4b5b63">[ sync ]</tspan>
-      <tspan fill="#c9d3d6" dx="10">last touched:</tspan>
-      <tspan fill="#7fb3ac" dx="6">root</tspan>
-      <tspan fill="#3f4a52" dx="14">commit</tspan>
-      <tspan fill="#8fa3ad" dx="6">6bebbfd</tspan>
-      <tspan fill="#3f4a52" dx="14">2026-07-25</tspan>
+      <tspan fill="#31505b">[ sync ]</tspan>
+      <tspan fill="#d8fff4" dx="10">last touched:</tspan>
+      <tspan fill="#39ff14" dx="6" filter="url(#asoft)">ppcosxkvm</tspan>
+      <tspan fill="#31505b" dx="6">&#9656;</tspan>
+      <tspan fill="#19f7ff" dx="6">root</tspan>
+      <tspan fill="#31505b" dx="14">commit</tspan>
+      <tspan fill="#5d7f8b" dx="6">6225203</tspan>
+      <tspan fill="#31505b" dx="14">2026-09-30</tspan>
     </text>
+    <text x="32" y="106" font-size="12.5" fill="#5d7f8b">
+      <tspan fill="#ff2bd6">msg:</tspan><tspan dx="7">qemu: scanout that keeps up with the guest</tspan>
+    </text>
+    <text x="968" y="106" font-size="12" fill="#31505b" text-anchor="end">github.com/linuxkid473/ppcosxkvm</text>
   </g>
+  <rect x="1" y="1" width="998" height="130" rx="12" fill="none" stroke="url(#aedge)" stroke-width="1.5"/>
 </svg>

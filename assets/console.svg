@@ -1,0 +1,112 @@
+<svg width="100%" viewBox="0 0 1000 404" xmlns="http://www.w3.org/2000/svg" role="img" aria-labelledby="conTitle conDesc">
+  <title id="conTitle">Boot console</title>
+  <desc id="conDesc">
+    Animated boot console: vihaan, 14, systems programmer. Loads PureUNIX (unix-like
+    kernel from scratch), AsterOS (darwin/xnu based), the ppcosxkvm and maclator
+    emulators, the Metal GPU bridge and the GNU/QEMU toolchain, then drops to a
+    verbose run prompt.
+  </desc>
+  <defs>
+    <linearGradient id="cbg" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0%" stop-color="#04070b"/>
+      <stop offset="100%" stop-color="#080d13"/>
+    </linearGradient>
+    <linearGradient id="cedge" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0%" stop-color="#1d3a40"/>
+      <stop offset="100%" stop-color="#0d1a1f"/>
+    </linearGradient>
+    <linearGradient id="cneon" x1="0" y1="0" x2="1" y2="0">
+      <stop offset="0%" stop-color="#39ff14"/>
+      <stop offset="45%" stop-color="#19f7ff"/>
+      <stop offset="100%" stop-color="#ff2bd6"/>
+    </linearGradient>
+    <linearGradient id="csweep" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0%" stop-color="#19f7ff" stop-opacity="0"/>
+      <stop offset="50%" stop-color="#19f7ff" stop-opacity="0.55"/>
+      <stop offset="100%" stop-color="#19f7ff" stop-opacity="0"/>
+    </linearGradient>
+    <filter id="cglow" x="-25%" y="-25%" width="150%" height="150%">
+      <feGaussianBlur stdDeviation="4" result="b"/>
+      <feMerge>
+        <feMergeNode in="b"/>
+        <feMergeNode in="b"/>
+        <feMergeNode in="SourceGraphic"/>
+      </feMerge>
+    </filter>
+    <filter id="csoft" x="-20%" y="-20%" width="140%" height="140%">
+      <feGaussianBlur stdDeviation="1.4" result="b"/>
+      <feMerge>
+        <feMergeNode in="b"/>
+        <feMergeNode in="SourceGraphic"/>
+      </feMerge>
+    </filter>
+    <pattern id="cgrid" width="40" height="40" patternUnits="userSpaceOnUse">
+      <path d="M40 0 H0 V40" fill="none" stroke="#19f7ff" stroke-opacity="0.05" stroke-width="1"/>
+    </pattern>
+    <pattern id="cscan" width="4" height="4" patternUnits="userSpaceOnUse">
+      <rect width="4" height="1" fill="#ffffff" opacity="0.022"/>
+    </pattern>
+  </defs>
+  <clipPath id="cclip"><rect x="1" y="1" width="998" height="402" rx="12"/></clipPath>
+  <g clip-path="url(#cclip)">
+    <rect x="1" y="1" width="998" height="402" rx="12" fill="url(#cbg)"/>
+    <rect x="1" y="1" width="998" height="402" rx="12" fill="url(#cgrid)"/>
+    <rect x="1" y="1" width="998" height="402" rx="12" fill="url(#cscan)"/>
+
+    <!-- chrome bar -->
+    <rect x="1" y="1" width="998" height="34" fill="#070c11"/>
+    <circle cx="26" cy="18" r="5" fill="#ff2bd6" opacity="0.8"/>
+    <circle cx="44" cy="18" r="5" fill="#ffb000" opacity="0.5"/>
+    <circle cx="62" cy="18" r="5" fill="#39ff14" opacity="0.8"/>
+    <text x="500" y="22" text-anchor="middle" font-family="ui-monospace, SFMono-Regular, Menlo, Consolas, 'Liberation Mono', monospace" font-size="12" fill="#5d7f8b" letter-spacing="1.5">/dev/console — vihaan@github</text>
+    <line x1="1" y1="35" x2="999" y2="35" stroke="#0d1a1f" stroke-width="1"/>
+
+    <g font-family="ui-monospace, SFMono-Regular, Menlo, Consolas, 'Liberation Mono', monospace" font-size="15">
+      <text x="40" y="76" opacity="1" filter="url(#csoft)">
+        <tspan fill="#31505b">[  0.000000]</tspan><tspan fill="#5d7f8b" dx="6">vihaan:</tspan><tspan fill="#d8fff4" dx="6">systems programmer · age 14 · writes operating systems from scratch</tspan>
+        <animate attributeName="opacity" from="0" to="1" begin="0.15s" dur="0.12s" fill="freeze"/>
+      </text>
+      <text x="40" y="106" opacity="1" filter="url(#csoft)">
+        <tspan fill="#31505b">[  0.000473]</tspan><tspan fill="#5d7f8b" dx="6">kernel:</tspan><tspan fill="#39ff14" dx="6">pureunix — process table, vfs, signals, pipes, usb/xhci online</tspan>
+        <animate attributeName="opacity" from="0" to="1" begin="0.45s" dur="0.12s" fill="freeze"/>
+      </text>
+      <text x="40" y="136" opacity="1" filter="url(#csoft)">
+        <tspan fill="#31505b">[  0.001337]</tspan><tspan fill="#5d7f8b" dx="6">kernel:</tspan><tspan fill="#39ff14" dx="6">asteros — darwin / xnu based, booting to loginwindow</tspan>
+        <animate attributeName="opacity" from="0" to="1" begin="0.75s" dur="0.12s" fill="freeze"/>
+      </text>
+      <text x="40" y="166" opacity="1" filter="url(#csoft)">
+        <tspan fill="#31505b">[  0.002950]</tspan><tspan fill="#5d7f8b" dx="6">emulate:</tspan><tspan fill="#ff2bd6" dx="6">ppcosxkvm — powerpc mac os x tiger on apple silicon</tspan>
+        <animate attributeName="opacity" from="0" to="1" begin="1.05s" dur="0.12s" fill="freeze"/>
+      </text>
+      <text x="40" y="196" opacity="1" filter="url(#csoft)">
+        <tspan fill="#31505b">[  0.004096]</tspan><tspan fill="#5d7f8b" dx="6">emulate:</tspan><tspan fill="#ff2bd6" dx="6">maclator — arm64 binaries on intel via interpreter + jit + aot cache</tspan>
+        <animate attributeName="opacity" from="0" to="1" begin="1.35s" dur="0.12s" fill="freeze"/>
+      </text>
+      <text x="40" y="226" opacity="1" filter="url(#csoft)">
+        <tspan fill="#31505b">[  0.005611]</tspan><tspan fill="#5d7f8b" dx="6">gpu:</tspan><tspan fill="#19f7ff" dx="6">metal bridge mounted · quartz extreme · core image online</tspan>
+        <animate attributeName="opacity" from="0" to="1" begin="1.65s" dur="0.12s" fill="freeze"/>
+      </text>
+      <text x="40" y="256" opacity="1" filter="url(#csoft)">
+        <tspan fill="#31505b">[  0.006942]</tspan><tspan fill="#5d7f8b" dx="6">toolchain:</tspan><tspan fill="#d8fff4" dx="6">gnu · nasm · ld · gdb · qemu · git — no framework, no hand-holding</tspan>
+        <animate attributeName="opacity" from="0" to="1" begin="1.95s" dur="0.12s" fill="freeze"/>
+      </text>
+      <text x="40" y="286" opacity="1" filter="url(#csoft)">
+        <tspan fill="#31505b">[  0.009118]</tspan><tspan fill="#5d7f8b" dx="6">userland:</tspan><tspan fill="#39ff14" dx="6">mounting /home/vihaan ..... ok</tspan>
+        <animate attributeName="opacity" from="0" to="1" begin="2.25s" dur="0.12s" fill="freeze"/>
+      </text>
+
+      <!-- prompt -->
+      <text x="40" y="338" opacity="1" font-size="16">
+        <tspan fill="#39ff14">vihaan</tspan><tspan fill="#31505b">@</tspan><tspan fill="#39ff14">github</tspan><tspan fill="#31505b">:</tspan><tspan fill="#5d7f8b">~$</tspan><tspan fill="#19f7ff" dx="6">./run --verbose</tspan>
+        <animate attributeName="opacity" from="0" to="1" begin="2.55s" dur="0.2s" fill="freeze"/>
+      </text>
+      <rect x="355" y="324" width="10" height="18" fill="#39ff14" opacity="1">
+        <animate attributeName="opacity" values="0;0;1;1;0;0" keyTimes="0;0.001;0.01;0.5;0.51;1" begin="2.90s" dur="1.05s" repeatCount="indefinite"/>
+      </rect>
+    </g>
+    <rect x="1" y="1" width="998" height="402" rx="12" fill="url(#csweep)" opacity="0.09">
+      <animate attributeName="y" values="-404;404" dur="9s" repeatCount="indefinite"/>
+    </rect>
+    <rect x="1" y="1" width="998" height="402" rx="12" fill="none" stroke="url(#cedge)" stroke-width="1.5"/>
+  </g>
+</svg>

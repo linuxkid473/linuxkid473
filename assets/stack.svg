@@ -1,0 +1,135 @@
+<svg width="100%" viewBox="0 0 1000 366" xmlns="http://www.w3.org/2000/svg" role="img" aria-labelledby="stkTitle stkDesc">
+  <title id="stkTitle">Stack matrix</title>
+  <desc id="stkDesc">
+    Stack matrix. Languages: C, x86-64 assembly, C++, Bash, Make, JavaScript.
+    Systems: kernel, memory management, scheduling, syscalls, signals, ELF, VFS,
+    drivers, USB/xHCI. Emulation: QEMU, PowerPC, interpreter, JIT, AOT cache,
+    Metal and OpenGL bridges. Toolchain: GNU, nasm, ld, GDB, Make, Git, OpenCore.
+    Platforms: x86-64, arm64, PowerPC, Linux, macOS/XNU, legacy BIOS, UEFI.
+  </desc>
+  <defs>
+    <linearGradient id="sbg" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0%" stop-color="#04070b"/>
+      <stop offset="100%" stop-color="#080d13"/>
+    </linearGradient>
+    <linearGradient id="sedge" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0%" stop-color="#1d3a40"/>
+      <stop offset="100%" stop-color="#0d1a1f"/>
+    </linearGradient>
+    <linearGradient id="sneon" x1="0" y1="0" x2="1" y2="0">
+      <stop offset="0%" stop-color="#39ff14"/>
+      <stop offset="45%" stop-color="#19f7ff"/>
+      <stop offset="100%" stop-color="#ff2bd6"/>
+    </linearGradient>
+    <linearGradient id="ssweep" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0%" stop-color="#19f7ff" stop-opacity="0"/>
+      <stop offset="50%" stop-color="#19f7ff" stop-opacity="0.55"/>
+      <stop offset="100%" stop-color="#19f7ff" stop-opacity="0"/>
+    </linearGradient>
+    <filter id="sglow" x="-25%" y="-25%" width="150%" height="150%">
+      <feGaussianBlur stdDeviation="4" result="b"/>
+      <feMerge>
+        <feMergeNode in="b"/>
+        <feMergeNode in="b"/>
+        <feMergeNode in="SourceGraphic"/>
+      </feMerge>
+    </filter>
+    <filter id="ssoft" x="-20%" y="-20%" width="140%" height="140%">
+      <feGaussianBlur stdDeviation="1.4" result="b"/>
+      <feMerge>
+        <feMergeNode in="b"/>
+        <feMergeNode in="SourceGraphic"/>
+      </feMerge>
+    </filter>
+    <pattern id="sgrid" width="40" height="40" patternUnits="userSpaceOnUse">
+      <path d="M40 0 H0 V40" fill="none" stroke="#19f7ff" stroke-opacity="0.05" stroke-width="1"/>
+    </pattern>
+    <pattern id="sscan" width="4" height="4" patternUnits="userSpaceOnUse">
+      <rect width="4" height="1" fill="#ffffff" opacity="0.022"/>
+    </pattern>
+  </defs>
+  <clipPath id="sclip"><rect x="1" y="1" width="998" height="364" rx="12"/></clipPath>
+  <g clip-path="url(#sclip)">
+    <rect x="1" y="1" width="998" height="364" rx="12" fill="url(#sbg)"/>
+    <rect x="1" y="1" width="998" height="364" rx="12" fill="url(#sgrid)"/>
+    <rect x="1" y="1" width="998" height="364" rx="12" fill="url(#sscan)"/>
+
+    <text x="32" y="42" font-family="ui-monospace, SFMono-Regular, Menlo, Consolas, 'Liberation Mono', monospace" font-size="13" letter-spacing="1.5" fill="#5d7f8b">/etc/profile.d/stack.conf</text>
+    <text x="968" y="42" font-family="ui-monospace, SFMono-Regular, Menlo, Consolas, 'Liberation Mono', monospace" font-size="12" letter-spacing="1.5" fill="#31505b" text-anchor="end">cat stack.conf</text>
+    <line x1="32" y1="54" x2="968" y2="54" stroke="#0d1a1f" stroke-width="1"/>
+    <g opacity="1">
+      <rect x="32" y="78" width="296" height="124" rx="8" fill="#070c11" stroke="#19f7ff" stroke-opacity="0.32" stroke-width="1"/>
+      <rect x="32" y="78" width="52" height="3" rx="1.5" fill="#19f7ff"/>
+      <text x="50" y="112" font-family="ui-monospace, SFMono-Regular, Menlo, Consolas, 'Liberation Mono', monospace" font-size="14" letter-spacing="2.4" fill="#19f7ff" filter="url(#ssoft)">LANGUAGES</text>
+      <text x="310" y="112" font-family="ui-monospace, SFMono-Regular, Menlo, Consolas, 'Liberation Mono', monospace" font-size="11" fill="#31505b" text-anchor="end">0x01</text>
+      <line x1="50" y1="124" x2="310" y2="124" stroke="#19f7ff" stroke-opacity="0.22" stroke-width="1"/>
+        <text x="50" y="152" font-size="12.5" fill="#5d7f8b">C · x86-64 assembly</text>
+        <text x="50" y="172" font-size="12.5" fill="#5d7f8b">C++ · Bash · Make</text>
+        <text x="50" y="192" font-size="12.5" fill="#5d7f8b">JavaScript · HTML/CSS</text>
+      <animate attributeName="opacity" from="0" to="1" begin="0.20s" dur="0.35s" fill="freeze"/>
+    </g>
+    <g opacity="1">
+      <rect x="352" y="78" width="296" height="124" rx="8" fill="#070c11" stroke="#39ff14" stroke-opacity="0.32" stroke-width="1"/>
+      <rect x="352" y="78" width="52" height="3" rx="1.5" fill="#39ff14"/>
+      <text x="370" y="112" font-family="ui-monospace, SFMono-Regular, Menlo, Consolas, 'Liberation Mono', monospace" font-size="14" letter-spacing="2.4" fill="#39ff14" filter="url(#ssoft)">SYSTEMS</text>
+      <text x="630" y="112" font-family="ui-monospace, SFMono-Regular, Menlo, Consolas, 'Liberation Mono', monospace" font-size="11" fill="#31505b" text-anchor="end">0x02</text>
+      <line x1="370" y1="124" x2="630" y2="124" stroke="#39ff14" stroke-opacity="0.22" stroke-width="1"/>
+        <text x="370" y="152" font-size="12.5" fill="#5d7f8b">kernel · memory · sched</text>
+        <text x="370" y="172" font-size="12.5" fill="#5d7f8b">syscalls · signals · elf</text>
+        <text x="370" y="192" font-size="12.5" fill="#5d7f8b">vfs · drivers · usb/xhci</text>
+      <animate attributeName="opacity" from="0" to="1" begin="0.38s" dur="0.35s" fill="freeze"/>
+    </g>
+    <g opacity="1">
+      <rect x="672" y="78" width="296" height="124" rx="8" fill="#070c11" stroke="#ff2bd6" stroke-opacity="0.32" stroke-width="1"/>
+      <rect x="672" y="78" width="52" height="3" rx="1.5" fill="#ff2bd6"/>
+      <text x="690" y="112" font-family="ui-monospace, SFMono-Regular, Menlo, Consolas, 'Liberation Mono', monospace" font-size="14" letter-spacing="2.4" fill="#ff2bd6" filter="url(#ssoft)">EMULATION</text>
+      <text x="950" y="112" font-family="ui-monospace, SFMono-Regular, Menlo, Consolas, 'Liberation Mono', monospace" font-size="11" fill="#31505b" text-anchor="end">0x03</text>
+      <line x1="690" y1="124" x2="950" y2="124" stroke="#ff2bd6" stroke-opacity="0.22" stroke-width="1"/>
+        <text x="690" y="152" font-size="12.5" fill="#5d7f8b">qemu · powerpc g3/g4</text>
+        <text x="690" y="172" font-size="12.5" fill="#5d7f8b">interpreter · jit · aot</text>
+        <text x="690" y="192" font-size="12.5" fill="#5d7f8b">metal / opengl bridges</text>
+      <animate attributeName="opacity" from="0" to="1" begin="0.56s" dur="0.35s" fill="freeze"/>
+    </g>
+    <g opacity="1">
+      <rect x="32" y="214" width="296" height="124" rx="8" fill="#070c11" stroke="#ffb000" stroke-opacity="0.32" stroke-width="1"/>
+      <rect x="32" y="214" width="52" height="3" rx="1.5" fill="#ffb000"/>
+      <text x="50" y="248" font-family="ui-monospace, SFMono-Regular, Menlo, Consolas, 'Liberation Mono', monospace" font-size="14" letter-spacing="2.4" fill="#ffb000" filter="url(#ssoft)">TOOLCHAIN</text>
+      <text x="310" y="248" font-family="ui-monospace, SFMono-Regular, Menlo, Consolas, 'Liberation Mono', monospace" font-size="11" fill="#31505b" text-anchor="end">0x04</text>
+      <line x1="50" y1="260" x2="310" y2="260" stroke="#ffb000" stroke-opacity="0.22" stroke-width="1"/>
+        <text x="50" y="288" font-size="12.5" fill="#5d7f8b">gnu · nasm · ld · ld64</text>
+        <text x="50" y="308" font-size="12.5" fill="#5d7f8b">gdb · make · git</text>
+        <text x="50" y="328" font-size="12.5" fill="#5d7f8b">qemu · opencore / openduet</text>
+      <animate attributeName="opacity" from="0" to="1" begin="0.74s" dur="0.35s" fill="freeze"/>
+    </g>
+    <g opacity="1">
+      <rect x="352" y="214" width="296" height="124" rx="8" fill="#070c11" stroke="#19f7ff" stroke-opacity="0.32" stroke-width="1"/>
+      <rect x="352" y="214" width="52" height="3" rx="1.5" fill="#19f7ff"/>
+      <text x="370" y="248" font-family="ui-monospace, SFMono-Regular, Menlo, Consolas, 'Liberation Mono', monospace" font-size="14" letter-spacing="2.4" fill="#19f7ff" filter="url(#ssoft)">PLATFORMS</text>
+      <text x="630" y="248" font-family="ui-monospace, SFMono-Regular, Menlo, Consolas, 'Liberation Mono', monospace" font-size="11" fill="#31505b" text-anchor="end">0x05</text>
+      <line x1="370" y1="260" x2="630" y2="260" stroke="#19f7ff" stroke-opacity="0.22" stroke-width="1"/>
+        <text x="370" y="288" font-size="12.5" fill="#5d7f8b">x86-64 · arm64 · powerpc</text>
+        <text x="370" y="308" font-size="12.5" fill="#5d7f8b">linux · macos / xnu</text>
+        <text x="370" y="328" font-size="12.5" fill="#5d7f8b">legacy bios · uefi</text>
+      <animate attributeName="opacity" from="0" to="1" begin="0.92s" dur="0.35s" fill="freeze"/>
+    </g>
+    <g opacity="1">
+      <rect x="672" y="214" width="296" height="124" rx="8" fill="#070c11" stroke="#ff2bd6" stroke-opacity="0.32" stroke-width="1"/>
+      <rect x="672" y="214" width="52" height="3" rx="1.5" fill="#ff2bd6"/>
+      <text x="690" y="248" font-family="ui-monospace, SFMono-Regular, Menlo, Consolas, 'Liberation Mono', monospace" font-size="14" letter-spacing="2.4" fill="#ff2bd6" filter="url(#ssoft)">CURIOSITY</text>
+      <text x="950" y="248" font-family="ui-monospace, SFMono-Regular, Menlo, Consolas, 'Liberation Mono', monospace" font-size="11" fill="#31505b" text-anchor="end">0x06</text>
+      <line x1="690" y1="260" x2="950" y2="260" stroke="#ff2bd6" stroke-opacity="0.22" stroke-width="1"/>
+        <text x="690" y="288" font-size="12.5" fill="#5d7f8b">reverse engineering</text>
+        <text x="690" y="308" font-size="12.5" fill="#5d7f8b">bootloaders · firmware</text>
+        <text x="690" y="328" font-size="12.5" fill="#5d7f8b">gpu, metal &amp; kernel internals</text>
+      <animate attributeName="opacity" from="0" to="1" begin="1.10s" dur="0.35s" fill="freeze"/>
+    </g>
+    <line x1="32" y1="332" x2="968" y2="332" stroke="#0d1a1f" stroke-width="1"/>
+    <text x="32" y="352" font-family="ui-monospace, SFMono-Regular, Menlo, Consolas, 'Liberation Mono', monospace" font-size="12" fill="#5d7f8b">
+      <tspan fill="#39ff14" opacity="0.85">[ ok ]</tspan><tspan dx="8">hand-written c, asm and linker scripts — boots on real hardware and qemu</tspan>
+    </text>
+    <rect x="1" y="1" width="998" height="364" rx="12" fill="url(#ssweep)" opacity="0.09">
+      <animate attributeName="y" values="-366;366" dur="9s" repeatCount="indefinite"/>
+    </rect>
+    <rect x="1" y="1" width="998" height="364" rx="12" fill="none" stroke="url(#sedge)" stroke-width="1.5"/>
+  </g>
+</svg>

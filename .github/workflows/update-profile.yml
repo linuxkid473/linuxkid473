@@ -23,7 +23,6 @@ jobs:
     runs-on: ubuntu-latest
     env:
       OWNER: linuxkid473
-      REPO: PureUNIX
     steps:
       - name: Checkout profile repo
         uses: actions/checkout@v4
