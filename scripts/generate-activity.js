@@ -140,10 +140,17 @@ function renderSvg({ repo, url, subsystem, sha, message, date }) {
 
 async function main() {
   const repos = await githubFetch(
-    `/users/${OWNER}/repos?sort=pushed&per_page=1&type=owner`
+    `/users/${OWNER}/repos?sort=pushed&per_page=10&type=owner`
   );
 
-  const latest = Array.isArray(repos) ? repos[0] : null;
+  // Never pick the profile repo itself: the workflow commits activity.svg into
+  // it, which would make it the most recently pushed repo and cause the panel
+  // to regenerate (and commit) itself on every run.
+  const candidates = (Array.isArray(repos) ? repos : []).filter(
+    (r) => r && r.name && r.name !== OWNER && r.pushed_at
+  );
+
+  const latest = candidates[0];
   if (!latest) {
     throw new Error(`No public repositories returned for ${OWNER}.`);
   }
