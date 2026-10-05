@@ -1,6 +1,6 @@
 <svg width="100%" viewBox="0 0 1000 132" xmlns="http://www.w3.org/2000/svg" role="img" aria-labelledby="actTitle actDesc">
   <title id="actTitle">Latest GitHub activity</title>
-  <desc id="actDesc">Most recently pushed public repository: ppcosxkvm. Latest commit 213164a on 2026-10-04 touching docs: docs: Jaguar screenshots.</desc>
+  <desc id="actDesc">Most recently pushed public repository: ppcosxkvm. Latest commit d1b8ea4 on 2026-10-05 touching root: Merge pull request #8 from Teufelhunden-0311/pr-prebuilt-origin.</desc>
   <defs>
     <linearGradient id="abg" x1="0" y1="0" x2="0" y2="1">
       <stop offset="0%" stop-color="#04070b"/>
@@ -32,13 +32,13 @@
       <tspan fill="#d8fff4" dx="10">last touched:</tspan>
       <tspan fill="#39ff14" dx="6" filter="url(#asoft)">ppcosxkvm</tspan>
       <tspan fill="#31505b" dx="6">&#9656;</tspan>
-      <tspan fill="#19f7ff" dx="6">docs</tspan>
+      <tspan fill="#19f7ff" dx="6">root</tspan>
       <tspan fill="#31505b" dx="14">commit</tspan>
-      <tspan fill="#5d7f8b" dx="6">213164a</tspan>
-      <tspan fill="#31505b" dx="14">2026-10-04</tspan>
+      <tspan fill="#5d7f8b" dx="6">d1b8ea4</tspan>
+      <tspan fill="#31505b" dx="14">2026-10-05</tspan>
     </text>
     <text x="32" y="106" font-size="12.5" fill="#5d7f8b">
-      <tspan fill="#ff2bd6">msg:</tspan><tspan dx="7">docs: Jaguar screenshots</tspan>
+      <tspan fill="#ff2bd6">msg:</tspan><tspan dx="7">Merge pull request #8 from Teufelhunden-0311/pr-prebuilt-origin</tspan>
     </text>
     <text x="968" y="106" font-size="12" fill="#31505b" text-anchor="end">github.com/linuxkid473/ppcosxkvm</text>
   </g>
