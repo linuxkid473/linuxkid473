@@ -1,0 +1,47 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1000 250" width="1000" height="250" role="img" aria-label="vihaan — 14 · breaking and making things">
+  <style>
+    .mono { font-family: 'SF Mono', Menlo, Consolas, 'DejaVu Sans Mono', monospace; }
+    .cur { animation: b 1.1s steps(1) infinite; }
+    @keyframes b { 50% { opacity: 0; } }
+  </style>
+  <defs>
+    <pattern id="dots" width="16" height="16" patternUnits="userSpaceOnUse">
+      <rect x="7" y="7" width="2" height="2" fill="#fff" opacity="0.07"/>
+    </pattern>
+  </defs>
+
+  <!-- panel with one cut corner -->
+  <path d="M0 0H1000V202L952 250H0Z" fill="#0c0c11"/>
+  <path d="M0 0H1000V202L952 250H0Z" fill="url(#dots)"/>
+  <path d="M0.75 0.75H999.25V201.7L951.7 249.25H0.75Z" fill="none" stroke="#2a2a36" stroke-width="1.5"/>
+
+  <!-- accents -->
+  <rect x="0" y="0" width="150" height="5" fill="#fcee0a"/>
+  <path d="M1000 202L952 250" stroke="#fcee0a" stroke-width="3"/>
+
+  <!-- circuit traces, right side -->
+  <g fill="none" stroke="#00e5ff" stroke-width="1.5" opacity="0.55" stroke-linejoin="miter">
+    <path d="M1000 58H900L872 86H700"/>
+    <path d="M1000 104H930L902 132H760L742 150H640"/>
+    <path d="M1000 150H964L946 168H830"/>
+  </g>
+  <g fill="#00e5ff" opacity="0.9">
+    <rect x="694" y="83" width="6" height="6"/>
+    <rect x="634" y="147" width="6" height="6"/>
+    <rect x="824" y="165" width="6" height="6"/>
+  </g>
+
+  <!-- text -->
+  <text class="mono" x="44" y="148" font-size="104" font-weight="800" fill="#f1f1f5" letter-spacing="-3">vihaan</text>
+  <text class="mono" x="46" y="188" font-size="21" fill="#9a9aab"><tspan fill="#fcee0a" font-weight="700">14</tspan>  ·  breaking &amp; making things<tspan class="cur" fill="#fcee0a">_</tspan></text>
+
+  <!-- chips -->
+  <g class="mono" font-size="12" font-weight="700" letter-spacing="2" fill="#00e5ff">
+    <path d="M46 208h58l8 8v14H46z" fill="none" stroke="#00e5ff" stroke-width="1.2" opacity="0.8"/>
+    <text x="58" y="224">MACS</text>
+    <path d="M124 208h58l8 8v14H124z" fill="none" stroke="#00e5ff" stroke-width="1.2" opacity="0.8"/>
+    <text x="136" y="224">BEOS</text>
+    <path d="M202 208h134l8 8v14H202z" fill="none" stroke="#00e5ff" stroke-width="1.2" opacity="0.8"/>
+    <text x="214" y="224">RETRO COMPUTING</text>
+  </g>
+</svg>
